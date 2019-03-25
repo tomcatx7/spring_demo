@@ -1,0 +1,11 @@
+<beans>
+    <bean id="myeye" class="com.zxj.spring.bean.Eye">
+        <property name="num" value="2"/>
+        <property name="color" value="green"/>
+    </bean>
+
+    <bean id="person" class="com.zxj.spring.bean.Person">
+        <property name="name" value="tom" />
+        <property name="eye" ref="myeye" />
+    </bean>
+</beans>
